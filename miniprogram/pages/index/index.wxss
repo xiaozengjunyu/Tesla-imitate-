@@ -1,0 +1,173 @@
+/* pages/index/index.wxss */
+
+
+/* 月刊 */
+.magazine-area {
+    height: 940rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.magazine-area .title {
+    margin-top: 120rpx;
+    font-size: 50rpx;
+}
+
+.magazine-area .magazine-cover {
+    margin-top: 44rpx;
+    width: 441rpx;
+    height: 555rpx;
+}
+
+.magazine-area .magazine-title {
+    margin-top: 24rpx;
+    font-size: 30rpx;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+
+
+.icon-banner {
+    width: 87vw;
+    height: 244rpx;
+    background-color: #f4f4f6;
+    border-radius: 20rpx;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 54rpx;
+}
+
+.icon-banner .banner-bg {
+    width: 87vw;
+    height: 244rpx;
+    position: absolute;
+    top: 0;
+    right: 0rpx;
+}
+
+.icon-banner  .credit-card {
+    width: 244rpx;
+    height: 244rpx;
+    overflow: hidden;
+    right: 48rpx;
+}
+
+.icon-banner .content {
+    position: absolute;
+    top: 70rpx;
+    left: 55rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.icon-banner .content .info {
+    display: flex;
+    flex-direction: column;
+}
+.icon-banner .content .info .title {
+    font-size: 35rpx;
+    font-weight: bold;
+    margin-bottom: 24rpx;
+}
+.icon-banner .content .info .subtitle {
+    font-size: 24rpx;
+}
+
+
+.icon-box-area {
+    margin-top: 30rpx;
+    margin-bottom: 30rpx;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-evenly;
+}
+
+.icon-box {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30rpx;
+}
+
+.icon-box .icon {
+    height: 112rpx;
+    width: 112rpx;
+}
+
+.tradin image {
+    height: 72rpx;
+    width: 72rpx;
+    padding: 20rpx;
+}
+
+
+.popup-menu {
+    width: 100%;
+    padding: 50rpx;
+    box-sizing: border-box;
+}
+
+.popup-menu .head {
+    width: 100%;
+    height: 50rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45rpx;
+}
+
+.popup-menu .head .title {
+    font-size: 27rpx;
+    font-weight: bold;
+}
+
+.popup-menu .head .close-icon {
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.popup-menu .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup-menu .content .item-box {
+    width: 100%;
+    border: 1rpx solid #d1d1d1;
+    border-radius: 30rpx;
+    display: flex;
+    flex-direction: row;
+    padding: 24rpx 42rpx;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40rpx;
+    box-sizing: border-box;
+}
+
+
+.popup-menu .content .item-box:focus {
+    border-color: blue;
+}
+
+.popup-menu .content .item-box .title {
+    font-size: 30rpx;
+    font-weight: bold;
+}
+
+.popup-menu .content image {
+    width: 293rpx;
+    height: 191rpx;
+}

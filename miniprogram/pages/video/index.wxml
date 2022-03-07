@@ -1,0 +1,38 @@
+<view class="page">
+    <view class="header">
+        <video id="video" class="video" src="{{ uri }}" show-center-play-btn show-play-btn controls></video>
+        <view class="title">
+            {{ title }}
+        </view>
+    </view>
+    <view class="content">
+
+        <view class="title" bindtap="onCarModelTap">
+            {{ currentCarModel }} <image src="../../images/ic_arrow_down.svg"/>
+        </view>
+        <view class="video-list-area">
+            <view class="section" wx:for="{{ videoTree }}" wx:key="index" >
+                <view class="video-list-title">
+                    {{ categories[index].title }}
+                </view>
+
+                <view class="video-list">
+                    <view wx:for="{{ item }}" wx:for-item="video" class="video-box" 
+                    bindtap="play" data-video="{{video}}"
+                    >
+                        <image class="cover" src="{{ video.cover }}"></image>
+                        <view class="video-title">{{ video.title }}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <van-action-sheet
+  show="{{ showCarModelSelection }}"
+  actions="{{ actions }}"
+  bind:close="onClose"
+  bind:select="onSelect"
+  close-on-click-overlay
+  safe-area-inset-bottom	
+/>
+</view>
